@@ -1,0 +1,16 @@
+.semester{
+    font-weight: bold;
+    font-family: cursive;
+    color: olive;
+}
+.ul{
+    padding: 0 20px;
+    text-align: center;
+}
+.li{
+    display: inline-block;
+    width: 100px;
+}
+form{
+    text-align:center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../public/main.css" type="text/css">
+    <title>Campus Diary</title>
+</head>
+<body>
+    <header>
+        <h1>Campus Diary</h1>
+        <form action="/main.ejs" method="post">
+            <h2>Login</h2>
+            <section class ="id">
+                <label for="id">UserID</label>
+                <input type="text" name="id" id="id">
+            </section>
+            <section class = "pw">
+                <label for="pw">Passsword</label>
+                <input type="password" name="pw" id="pw">
+            </section>
+            <input type="submit">
+        </form>
+        <nav class="semester">
+            <ul>
+                <li><a href="1st spring">1st Spring</a></li>
+                <li><a href="1st summer">1st Summer</a></li>
+                <li><a href="1st autumn">1st Autumn</a></li>
+                <li><a href="1st winter">1st Winter</a></li>
+                <li><a href="2nd spring">2nd Spring</a></li>
+                <li><a href="2nd summer">2nd Summer</a></li>
+                <li><a href="2nd autumn">2nd Autumn</a></li>
+                <li><a href="2nd winter">2nd Winter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+    const HelloComponent = () =>{
+        return <h1>hello</h1>
+    }
+        //rendering
+        ReactDOM.render(
+            <HelloComponent />,
+            document.querySelector("#root")
+
+        )
+    </script>
+</body>
+</html>
